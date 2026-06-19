@@ -1,10 +1,10 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
-    
-
+    box-sizing: border-box;   
 }
+
+
 
 .navbar {
     background-color: rgb(248, 114, 12) !important;
@@ -98,12 +98,21 @@
 .categories {
     
     margin: 150px auto;
-    height: 230vh;
+    height: 110vh;
     max-width: 95vw;    
 }
 
 .cat-head{
     margin-left: 30px;
+}
+
+.cat-head::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: rgb(248, 114, 12);
+    margin-top: 10px;
 }
 .cat-items {
     display: grid;
@@ -116,8 +125,27 @@
 
 
 .column{
-    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+}
+
+.column:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
+}
+
+.badge{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: auto;
+    background-color: rgb(248, 114, 12) !important;
+    
+    
+   
 }
 
 
