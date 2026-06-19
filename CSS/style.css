@@ -79,6 +79,7 @@
     border: 1px solid white;
 }
 
+
 .heading {
     display: flex;
     flex-direction: column;
@@ -143,9 +144,42 @@
     top: 5px;
     width: auto;
     background-color: rgb(248, 114, 12) !important;
-    
-    
    
 }
 
+/* VEGETARIAN PAGE */
+.veg{
+    border: 2px solid rgb(248, 114, 12);
+    height: 230px;
+    width:95vw;
+    margin-top: 100px;
+    margin: 60px auto;    
+   
+}
 
+.veg-head{
+    color: rgb(248, 114, 12);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.veg-description{
+    padding: 15px;
+    color: rgb(98, 97, 97);
+}
+
+.meal-items{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 40px;
+    margin: 60px 40px ;
+    
+}
+
+.card{
+    width: auto ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card-title{
+    text-align: center;
+}
