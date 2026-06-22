@@ -4,8 +4,6 @@
     box-sizing: border-box;   
 }
 
-
-
 .navbar {
     background-color: rgb(248, 114, 12) !important;
     height: 60px;
@@ -182,4 +180,92 @@
 }
 .card-title{
     text-align: center;
+}
+
+/* CABBAGE SOUP */
+
+.menubar{
+    
+    background-color: rgb(248, 114, 12);
+    height: 50px;
+    width: 95vw;
+    margin: 50px auto;
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+
+.menubar i{
+    font-size: 20px;
+   
+    
+}
+
+.menubar .bi{
+    font-size:15px;
+    
+    
+}
+
+/* MEAL DETAILS */
+.meal-card{
+    
+    height: 200vh;
+    
+    width: 95%;
+    margin: 50px auto;
+    padding: 50px;
+    
+   
+    
+}
+
+.col img{
+    height: 100vh;
+    width: 700px;
+    margin-right: 750px;
+}
+.card-body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 36vw;
+    
+    
+}
+.card-body .card-title{
+    color:rgb(248,114,12) ;
+}
+
+.line{
+    margin-top: 10px;
+    width: 300px;
+    border-top: 3px solid rgb(248,114,12);
+}
+
+.carditems{
+    margin-left:0px;
+    margin-top: 20px;
+}
+
+.soup{
+    border: 2px solid rgb(248,114,12);
+    padding:1px 10px;
+    border-radius: 5px;
+    color: rgb(248,114,12);
+}
+
+.ingredients{
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+    margin-top: 40px;
+    background-color:rgb(248,114,12) ;
+    color: white;
+    padding: 20px;
 }
