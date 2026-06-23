@@ -213,18 +213,21 @@
 /* MEAL DETAILS */
 .meal-card{
     
-    height: 200vh;
-    
+    height: 175vh;
     width: 95%;
     margin: 50px auto;
-    padding: 50px;
-    
-   
+    padding: 50px;  
+}
+
+.meal-card .row{
+
+    height: 80vh;
+    width: 90vw;
     
 }
 
-.col img{
-    height: 100vh;
+.meal-card .col img{
+    height: 70vh;
     width: 700px;
     margin-right: 750px;
 }
@@ -260,9 +263,10 @@
     color: rgb(248,114,12);
 }
 
+/* INGREDIENTS */
 .ingredients{
-    border: 1px solid red;
-    height: 500px;
+    
+    height: 300px;
     width: 500px;
     margin-top: 40px;
     background-color:rgb(248,114,12) ;
@@ -271,13 +275,12 @@
 }
 
 
-.ingredients .row{
+.ingredients .ing-row{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
     gap: 10px;
     margin-left: 5px;
-    justify-items: center;
     align-items: center;
     text-align: left;
     margin-top: 20px;
@@ -285,7 +288,7 @@
     
 }
 
-.ingredients .row .col .num{
+.ingredients .ing-row .col .num{
     border: 1px solid ;
     background-color: green;
     border-radius: 50% ;
@@ -294,4 +297,55 @@
     width: 22px;
     justify-content: center;
     align-items: center;
+}
+
+.measure{
+    
+    width: 90vw;
+    height: 30vh;
+    padding-left: 0px;
+    
+}
+
+.measure .measure-values{
+    border: 1px solid rgb(219, 211, 211);
+    background-color: rgb(236, 237, 237);
+    width: 89vw;
+    height: 20vh;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 500px;
+    padding-top: 20px;
+    
+}
+
+.measure .measure-values .measure-items{
+  
+   text-align: left;
+    list-style: none;
+}
+
+.measure .measure-values .measure-items .fa-spoon{
+
+    color: rgb(248,114,12);
+    margin-right: 10px;
+    
+}
+
+/* INSTRUCTIONS */
+
+.instructions .instruction-content .instruction-list{
+    list-style: none;
+    height: 50vh;
+    
+    padding-left: 0px;
+}
+
+.instructions .instruction-content .instruction-list li{
+    padding-top: 20px;
+}
+
+.instructions .instruction-content .instruction-list li i{
+    color: rgb(248,114,12) ;
 }
