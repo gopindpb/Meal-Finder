@@ -1,7 +1,11 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 241, 241) !important;
 }
 
 .navbar {
@@ -45,13 +49,13 @@
     height: 700px;
     background-size: cover;
     position: relative;
-
-
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
+
+
 
 .banner .search-bar {
 
@@ -77,6 +81,10 @@
     border: 1px solid white;
 }
 
+.banner .search-bar .search-btn:hover{
+    background-color: white !important;
+    color: rgb(248, 114, 12) !important;
+}
 
 .heading {
     display: flex;
@@ -95,13 +103,13 @@
 /* CATEGORIES */
 
 .categories {
-    
+
     margin: 150px auto;
-    height: 110vh;
-    max-width: 95vw;    
+    height: auto;
+    max-width: 95vw;
 }
 
-.cat-head{
+.cat-head {
     margin-left: 30px;
 }
 
@@ -113,6 +121,7 @@
     background: rgb(248, 114, 12);
     margin-top: 10px;
 }
+
 .cat-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -123,69 +132,77 @@
 }
 
 
-.column{
+.column {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: relative;
+    transform: scale(1);
+    transition: transform 0.4s ease;
 }
 
-.column:hover{
+.column:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: scale(1.1);
+    transform: scale(.9);
 }
 
-.badge{
+.badge {
     position: absolute;
     right: 5px;
     top: 5px;
     width: auto;
     background-color: rgb(248, 114, 12) !important;
-   
+
 }
 
 /* VEGETARIAN PAGE */
-.veg{
+.veg {
     border: 2px solid rgb(248, 114, 12);
     height: 230px;
-    width:95vw;
+    width: 95vw;
     margin-top: 100px;
-    margin: 60px auto;    
-   
+    margin: 60px auto;
+
 }
 
-.veg-head{
+.veg-head {
     color: rgb(248, 114, 12);
     margin-left: 15px;
     margin-top: 15px;
 }
 
-.veg-description{
+.veg-description {
     padding: 15px;
     color: rgb(98, 97, 97);
 }
 
-.meal-items{
+.meal-items {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 40px;
-    margin: 60px 40px ;
-    
+    margin: 60px 40px;
+
 }
 
-.card{
-    width: auto ;
+.meal-items .card {
+    width: auto;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.card-title{
+
+.card-title {
     text-align: center;
+}
+
+.meals .meal-items .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.1);
 }
 
 /* CABBAGE SOUP */
 
-.menubar{
-    
+.menubar {
+
     background-color: rgb(248, 114, 12);
     height: 50px;
     width: 95vw;
@@ -195,119 +212,121 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    
+
 }
 
-.menubar i{
+.menubar i {
     font-size: 20px;
-   
-    
+
+
 }
 
-.menubar .bi{
-    font-size:15px;
-    
-    
+.menubar .bi {
+    font-size: 15px;
+
+
 }
 
 /* MEAL DETAILS */
-.meal-card{
-    
-    height: 175vh;
+.meal-card {
+    background-color: white;
+    height: auto;
     width: 95%;
     margin: 50px auto;
-    padding: 50px;  
+    padding: 50px;
 }
 
-.meal-card .row{
+.meal-card .row {
 
     height: 80vh;
     width: 90vw;
-    
+
 }
 
-.meal-card .col img{
+.meal-card .col img {
+    width: 100%;
     height: 70vh;
-    width: 700px;
     margin-right: 750px;
 }
-.cabbage-body{
-    
+
+.cabbage-body {
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     height: 100vh;
     width: 36vw;
-    
-    
-}
-.cabbage-body .card-title{
-    color:rgb(248,114,12) ;
+
+
 }
 
-.line{
+.cabbage-body .card-title {
+    color: rgb(248, 114, 12);
+}
+
+.line {
     margin-top: 10px;
     width: 300px;
-    border-top: 3px solid rgb(248,114,12);
+    border-top: 3px solid rgb(248, 114, 12);
 }
 
-.carditems{
-    margin-left:0px;
+.carditems {
+    margin-left: 0px;
     margin-top: 20px;
 }
 
-.soup{
-    border: 2px solid rgb(248,114,12);
-    padding:1px 10px;
+.soup {
+    border: 2px solid rgb(248, 114, 12);
+    padding: 1px 10px;
     border-radius: 5px;
-    color: rgb(248,114,12);
+    color: rgb(248, 114, 12);
 }
 
 /* INGREDIENTS */
-.ingredients{
-    
+.ingredients {
+
     height: 300px;
     width: 500px;
     margin-top: 40px;
-    background-color:rgb(248,114,12) ;
+    background-color: rgb(248, 114, 12);
     color: white;
     padding: 20px;
 }
 
 
-.ingredients .ing-row{
+.ingredients .ing-row {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     margin-left: 5px;
     align-items: center;
     text-align: left;
     margin-top: 20px;
-   
-    
+
+
 }
 
-.ingredients .ing-row .col .num{
-    border: 1px solid ;
+.ingredients .ing-row .col .num {
+    border: 1px solid;
     background-color: green;
-    border-radius: 50% ;
-    display:inline-flex;
+    border-radius: 50%;
+    display: inline-flex;
     height: 22px;
     width: 22px;
     justify-content: center;
     align-items: center;
 }
 
-.measure{
-    
+.measure {
+
     width: 90vw;
     height: 30vh;
     padding-left: 0px;
-    
+
 }
 
-.measure .measure-values{
+.measure .measure-values {
     border: 1px solid rgb(219, 211, 211);
     background-color: rgb(236, 237, 237);
     width: 89vw;
@@ -317,35 +336,42 @@
     align-items: center;
     gap: 500px;
     padding-top: 20px;
-    
+
 }
 
-.measure .measure-values .measure-items{
-  
-   text-align: left;
+.measure .measure-values .measure-items {
+
+    text-align: left;
     list-style: none;
 }
 
-.measure .measure-values .measure-items .fa-spoon{
+.measure .measure-values .measure-items .fa-spoon {
 
-    color: rgb(248,114,12);
+    color: rgb(248, 114, 12);
     margin-right: 10px;
-    
+
 }
 
 /* INSTRUCTIONS */
 
-.instructions .instruction-content .instruction-list{
+.instructions .instruction-content .instruction-list {
     list-style: none;
     height: 50vh;
-    
+
     padding-left: 0px;
 }
 
-.instructions .instruction-content .instruction-list li{
+.instructions .instruction-content .instruction-list li {
     padding-top: 20px;
 }
 
-.instructions .instruction-content .instruction-list li i{
-    color: rgb(248,114,12) ;
+.instructions .instruction-content .instruction-list li i {
+    color: rgb(248, 114, 12);
+}
+
+/* images */
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
