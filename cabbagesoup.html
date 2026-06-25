@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>MEAL FINDER</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top">
+
+            <!-- LOGO -->
+            <div class="container-fluid ">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>MEAL FINDER</span>
+                    </a>
+                </div>
+                <!-- HAMBURGER MENU -->
+
+                <div class="hamburger-menu ">
+                    <button class="navbar-toggler text-light border border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <!-- SIDEBAR -->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="#">Beef</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Chicken</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Dessert</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lamb</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Miscellaneous</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pasta</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pork</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Seafood</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Side</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Starters</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Vegan</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Vegetarian</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Breakfast</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Mutton</a>
+                            </li>
+                            <hr class="my-1">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <form class=" search-bar d-flex mt-6 " role="search">
+                <input class="form-control me-2 rounded-pill border-end-0" type="search" placeholder="Search"
+                    aria-label="Search" />
+                <button class="search-btn rounded-circle text-light " type="submit"><i
+                        class="fa-solid fa-magnifying-glass "></i></button>
+            </form>
+
+            <div class="heading">
+                <h1>What are your favorite cuisines?</h1>
+                <h4>PERSONALIZE YOUR EXPERIENCE</h4>
+            </div>
+        </div>
+
+        <div class="menubar">
+            <i class="fa-solid fa-house"></i>
+            <i class="bi bi-chevron-double-right"></i>
+            <h6>CABBAGE SOUP (SHCHI)</h6>
+        </div>
+
+        <div class="meal-details">
+
+            <div class="cat-head">
+                <h2>MEAL DETAILS</h2>
+            </div>
+
+
+            <div class="meal-card ">
+                <div class="row ">
+                    <div class="col">
+                        <img src="/IMAGES/cabbagesoup.jpg" class="img-fluid" alt="Cabbage Soup (Shchi)">
+                    </div>
+                    <div class="col">
+                        <div class="cabbage-body">
+                            <h5 class="card-title">Cabbage Soup (Shchi)</h5>
+                            <div class="line"></div>
+
+                            <div class="carditems">
+
+                                <p class="cat-soup"><strong>CATEGORY</strong>: VEGETARIAN</p>
+
+                                <p class="source"><strong>Source:</strong>https://www.thespruceeats.com/traditiona...</p>
+
+                                <p>
+                                    <strong>Tags: </strong>
+                                    <span class="soup">soup</span>
+                                </p>
+
+                                <div class="ingredients">
+                                    <div class="ingred-head">
+                                        <h6>Ingredients</h6>
+                                    </div>
+
+
+                                    <div class="container text-center">
+                                        <div class="ing-row">
+                                            <div class="col">
+                                                <span class="num">1</span>
+                                                <span>Unsalted Butter</span>
+                                            </div>
+
+                                            <div class="col">
+                                                <span class="num">2</span>
+                                                <span>Onion</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">3</span>
+                                                <span>Cabbage</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">4</span>
+                                                <span>Carrot</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">5</span>
+                                                <span>Celery</span>
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">6</span>
+                                                <span>Bay Leaf</span>
+
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">7</span>
+                                                <span>Vegetable stock</span>
+
+                                            </div>
+
+                                            <div class="col">
+                                                <span class="num">8</span>
+                                                <span>Potatoes</span>
+
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">9</span>
+                                                <span>Tomatoes</span>
+
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">10</span>
+                                                <span>Sour Cream</span>
+
+                                            </div>
+                                            <div class="col">
+                                                <span class="num">11</span>
+                                                <span>Dill</span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="measure">
+                    <span class="measure-heading">
+                        <h5>Measure:</h5>
+                    </span>
+
+                    <div class="measure-values">
+                        <ol class="measure-items fw-bold">
+                            <li><i class="fa-solid fa-spoon"></i>3tbs</li>
+                            <li><i class="fa-solid fa-spoon"></i>1 medium</li>
+                            <li><i class="fa-solid fa-spoon"></i>2 large</li>
+                            <li><i class="fa-solid fa-spoon"></i>Garnish</li>
+                        </ol>
+
+                        <ol class="measure-items fw-bold">
+                            <li><i class="fa-solid fa-spoon"></i>1 large</li>
+                            <li><i class="fa-solid fa-spoon"></i>8 cups</li>
+                            <li><i class="fa-solid fa-spoon"></i>2 large</li>
+                            <li><i class="fa-solid fa-spoon"></i>Garnish</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <span class="instruction-heading">
+                        <h5>Instructions:</h5>
+                    </span>
+                    <div class="instruction-content">
+                        <ul class="instruction-list ">
+                            <li><i class="fa-regular fa-square-check"></i>Add the butter to a large Dutch oven or other
+                                heavy-duty pot over medium heat. When the butter has melted, add the onion and sauté
+                                until translucent.</li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Add the cabbage, carrot, and celery. Sauté
+                                until the vegetables begin to soften, stirring frequently, about 3 minutes.</li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Add the bay leaf and vegetable stock and bring
+                                to a boil over high heat. Reduce the heat to low and simmer, covered, until the
+                                vegetables are crisp-tender, about 15 minutes.</li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Add the potatoes and bring it back to a boil
+                                over high heat. Reduce the heat to low and simmer, covered, until the potatoes are
+                                tender, about 10 minutes.</li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Add the tomatoes (or undrained canned
+                                tomatoes) and bring the soup back to a boil over high heat. Reduce the heat to low and
+                                simmer, uncovered, for 5 minutes. Season to taste with salt and pepper.</li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Remove and discard the bay leaf from the pot.
+                            </li>
+
+                            <li><i class="fa-regular fa-square-check"></i>Serve topped with fresh sour cream and fresh
+                                dill.</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+
+            <div class="cat-head">
+                <h2>CATEGORIES</h2>
+            </div>
+            <div class="cat-items">
+                <div class="column col1 ">
+                    <h4><span class="badge ">BEEF</span></h4>
+                    <img src="/IMAGES/beef.png" alt="beef" height="173px" width="313px">
+                </div>
+                <div class="column col2">
+                    <h4><span class="badge ">CHICKEN</span></h4>
+                    <img src="/IMAGES/chicken.png" alt="chicken" height="173px" width="313px">
+                </div>
+                <div class="column col3">
+                    <h4><span class="badge ">DESSERT</span></h4>
+                    <img src="/IMAGES/dessert.png" alt="dessert" height="173px" width="313px">
+                </div>
+                <div class="column col4">
+                    <h4><span class="badge ">LAMB</span></h4>
+                    <img src="/IMAGES/lamb.png" alt="lamb" height="173px" width="313px">
+                </div>
+                <div class="column col5">
+                    <h4><span class="badge ">MISCELLANEOUS</span></h4>
+                    <img src="/IMAGES/miscellaneous.png" alt="miscellaneous" height="173px" width="313px">
+                </div>
+                <div class="column col6">
+                    <h4><span class="badge ">PASTA</span></h4>
+                    <img src="/IMAGES/pasta.png" alt="pasta" height="173px" width="313px">
+                </div>
+                <div class="column col7">
+                    <h4><span class="badge ">PORK</span></h4>
+                    <img src="/IMAGES/pork.png" alt="pork" height="173px" width="313px">
+                </div>
+                <div class="column col8">
+                    <h4><span class="badge ">SEAFOOD</span></h4>
+                    <img src="/IMAGES/seafood.png" alt="seafood" height="173px" width="313px">
+                </div>
+                <div class="column col9">
+                    <h4><span class="badge ">SIDE</span></h4>
+                    <img src="/IMAGES/side.png" alt="side" height="173px" width="313px">
+                </div>
+                <div class="column col10">
+                    <h4><span class="badge ">STARTER</span></h4>
+                    <img src="/IMAGES/starter.png" alt="starter" height="173px" width="313px">
+                </div>
+                <div class="column col11">
+                    <h4><span class="badge ">VEGAN</span></h4>
+                    <img src="/IMAGES/vegan.png" alt="vegan" height="173px" width="313px">
+                </div>
+                <div class="column col12">
+                    <a href="vegetarian.html" target="_blank">
+                        <h4><span class="badge ">VEGETARIAN</span></h4>
+                        <img src="/IMAGES/vegetarian.png" alt="vegetarian" height="173px" width="313px">
+                    </a>
+                </div>
+
+                <div class="column col13">
+                    <h4><span class="badge ">BREAKFAST</span></h4>
+                    <img src="/IMAGES/breakfast.png" alt="breakfast" height="173px" width="313px">
+                </div>
+
+                <div class="column col14">
+                    <h4><span class="badge ">MUTTON</span></h4>
+                    <img src="/IMAGES/goat.png" alt="Mutton" height="173px" width="313px">
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

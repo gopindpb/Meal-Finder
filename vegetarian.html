@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>MEAL FINDER</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top">
+
+            <!-- LOGO -->
+            <div class="container-fluid ">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fa-solid fa-utensils"></i>
+                        <span>MEAL FINDER</span>
+                    </a>
+                </div>
+                <!-- HAMBURGER MENU -->
+
+                <div class="hamburger-menu ">
+                    <button class="navbar-toggler text-light border border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <!-- SIDEBAR -->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close rounded-circle" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="#">Beef</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Chicken</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Dessert</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Lamb</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Miscellaneous</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pasta</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Pork</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Seafood</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Side</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Starters</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Vegan</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="vegetarian.html">Vegetarian</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Breakfast</a>
+                            </li>
+                            <hr class="my-1">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Mutton</a>
+                            </li>
+                            <hr class="my-1">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <form class=" search-bar d-flex mt-6 " role="search">
+                <input class="form-control me-2 rounded-pill border-end-0" type="search" placeholder="Search"
+                    aria-label="Search" />
+                <button class="search-btn rounded-circle text-light " type="submit"><i
+                        class="fa-solid fa-magnifying-glass "></i></button>
+            </form>
+
+            <div class="heading">
+                <h1>What are your favorite cuisines?</h1>
+                <h4>PERSONALIZE YOUR EXPERIENCE</h4>
+            </div>
+        </div>
+
+        <div class="veg">
+            <div class="veg-head">
+                <h2>vegetarian</h2>
+            </div>
+            <div class="veg-description">
+                <p>Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood,
+                    and the flesh of any other animal) and may also include abstention from by-products of animal
+                    slaughter. Vegetarianism may be adopted for various reasons. Many people object to eating meat out
+                    of respect for sentient life. Such ethical motivations have been codified under various religious
+                    beliefs, as well as animal rights advocacy. Other motivations for vegetarianism are health-related,
+                    political, environmental, cultural, aesthetic, economic, or personal preference. There are
+                    variations of the diet as well. An ovo-lacto vegetarian diet includes both eggs and dairy products,
+                    an ovo-vegetarian diet includes eggs but not dairy products, and a lacto-vegetarian diet includes
+                    dairy products but not eggs. Some vegans also avoid other animal products such as beeswax, leather
+                    or silk clothing, and goose-fat shoe polish.</p>
+            </div>
+
+        </div>
+
+        <div class="meals">
+            <div class="cat-head">
+                <h2>CATEGORIES</h2>
+            </div>
+            <div class="meal-items">
+
+                <div class="card">
+                    <img src="/IMAGES/baingan.jpg" class="card-img-top" alt="baingan-bharta">
+                    <div class="card-body">
+                        <h5 class="card-title">Baingan Bharta</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/beetroot.jpg" class="card-img-top" alt="beetroot">
+                    <div class="card-body">
+                        <h5 class="card-title">Beetroot Soup (Borscht)</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <a href="cabbagesoup.html" class="text-decoration-none text-reset">
+                    <img src="/IMAGES/cabbagesoup.jpg" class="card-img-top" alt="cabbagesoup">
+                    <div class="card-body">
+                        <h5 class="card-title">Cabbage Soup (Shchi)</h5>
+
+                    </div>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/chickpea fatijas.jpg" class="card-img-top" alt="Chickpea Fajitas">
+                    <div class="card-body">
+                        <h5 class="card-title">Chickpea Fajitas</h5>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/IMAGES/crispy eggplant.jpg" class="card-img-top" alt="Crispy Eggplant">
+                    <div class="card-body">
+                        <h5 class="card-title">Crispy Eggplant</h5>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/dal fry.jpg" class="card-img-top" alt="Dal Fry">
+                    <div class="card-body">
+                        <h5 class="card-title">Dal Fry</h5>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/egg drop soup.jpg" class="card-img-top" alt="Egg Drop Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Egg Drop Soup</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/eggplany adobo.jpg" class=" card-img-top" alt="Eggplant Adobo">
+                    <div class="card-body">
+                        <h5 class="card-title">Eggplant Adobo</h5>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/flamiche.jpg" class="card-img-top" alt="Flamiche">
+                    <div class="card-body">
+                        <h5 class="card-title">Flamiche </h5>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/IMAGES/ful medames.jpg" class="card-img-top" alt=">Ful Medames">
+                    <div class="card-body">
+                        <h5 class="card-title">Ful Medames</h5>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/gigantes plaki.jpg" class="card-img-top" alt="Gigantes Plaki">
+                    <div class="card-body">
+                        <h5 class="card-title">Gigantes Plaki</h5>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/IMAGES/grilled eggplant.jpg" class="card-img-top"
+                        alt="Grilled Eggplant with Coconut Milk">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Eggplant  Coconut Milk</h5>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/kafteji.jpg" class="card-img-top" alt="Kafteji">
+                    <div class="card-body">
+                        <h5 class="card-title">Kafteji</h5>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/IMAGES/kidney bean.jpg" class="card-img-top" alt="Kidney Bean Curry">
+                    <div class="card-body">
+                        <h5 class="card-title">Kidney Bean Curry</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/koshari.jpg" class="card-img-top" alt="Koshari">
+                    <div class="card-body">
+                        <h5 class="card-title">Koshari</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/leblebi soup.jpg" class="card-img-top" alt="Leblebi Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Leblebi Soup</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/matar paneer.jpg" class="card-img-top" alt="Matar Paneer">
+                    <div class="card-body">
+                        <h5 class="card-title">Matar Paneer</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/moroccan carrot soup.jpg" class="card-img-top" alt="Moroccan Carrot Soup">
+                    <div class="card-body">
+                        <h5 class="card-title">Moroccan Carrot Soup</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/mushroom.jpg" class="card-img-top" alt="Mushroom & Chestnut Rotolo">
+                    <div class="card-body">
+                        <h5 class="card-title">Mushroom & Chestnut Rotolo</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/potato salad.jpg" class="card-img-top" alt="Potato Salad (Olivier Salad)">
+                    <div class="card-body">
+                        <h5 class="card-title">Potato Salad (Olivier Salad)</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/provencal omlette cake.jpg" class="card-img-top" alt="Provençal Omelette Cake">
+                    <div class="card-body">
+                        <h5 class="card-title">Provençal Omelette Cake</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/ratatouille.jpg" class="card-img-top" alt="Ratatouille">
+                    <div class="card-body">
+                        <h5 class="card-title">Ratatouille</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/ribolita.jpg" class="card-img-top" alt="Ribollita">
+                    <div class="card-body">
+                        <h5 class="card-title">Ribollita</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/roasted eggplant with tahini.jpg" class="card-img-top"
+                        alt="Roasted Eggplant with Tahini, Pine Nuts, and Lentils">
+                    <div class="card-body">
+                        <h5 class="card-title">Roasted Eggplant with Tahini, Pine Nuts, and Lentils</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/shakshuka.jpg" class="card-img-top" alt="Shakshuka">
+                    <div class="card-body">
+                        <h5 class="card-title">Shakshuka</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/smoky lentil.jpg" class="card-img-top" alt="Smoky Lentil Chili with Squash">
+                    <div class="card-body">
+                        <h5 class="card-title">Smoky Lentil Chili with Squash</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/spanish tortila.jpg" class="card-img-top" alt="Spanish Tortilla">
+                    <div class="card-body">
+                        <h5 class="card-title">Spanish Tortilla</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/spicy arrabiata penne.jpg" class="card-img-top" alt="Spicy Arrabiata Penne">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy Arrabiata Penne</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/spicy north african.jpg" class="card-img-top"
+                        alt="Spicy North African Potato Salad">
+                    <div class="card-body">
+                        <h5 class="card-title">Spicy North African Potato Salad</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/spinach and ricotta.jpg" class="card-img-top" alt="Spinach & Ricotta Cannelloni">
+                    <div class="card-body">
+                        <h5 class="card-title">Spinach & Ricotta Cannelloni</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/squash linguine.jpg" class="card-img-top" alt="Squash Linguine">
+                    <div class="card-body">
+                        <h5 class="card-title">Squash Linguine</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/stevetop eggplant.jpg" class="card-img-top"
+                        alt="Stovetop Eggplant with Harissa, Chickpeas, and Cumin Yogurt">
+                    <div class="card-body">
+                        <h5 class="card-title">Stovetop Eggplant with Harissa, Chickpeas, and Cumin Yogurt</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/stuffed bell peppers.jpg" class="card-img-top"
+                        alt="Stuffed Bell Peppers with Quinoa and Black Beans">
+                    <div class="card-body">
+                        <h5 class="card-title">Stuffed Bell Peppers with Quinoa and Black Beans</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/summer pistou.jpg" class="card-img-top" alt="Summer Pistou">
+                    <div class="card-body">
+                        <h5 class="card-title">Summer Pistou</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/tahini lentils.jpg" class="card-img-top" alt="Tahini Lentils">
+                    <div class="card-body">
+                        <h5 class="card-title">Tahini Lentils</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/tamiya.jpg" class="card-img-top" alt="Tamiya">
+                    <div class="card-body">
+                        <h5 class="card-title">Tamiya</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/tortang talong.jpg" class="card-img-top" alt="Tortang Talong">
+                    <div class="card-body">
+                        <h5 class="card-title">Tortang Talong</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/vegetarian cassserole.jpg" class="card-img-top" alt="Vegetarian Casserole">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetarian Casserole</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/vegetarian chilli.jpg" class="card-img-top" alt="Vegetarian Chilli">
+                    <div class="card-body">
+                        <h5 class="card-title">Vegetarian Chilli</h5>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/IMAGES/yaki udon.jpg" class="card-img-top" alt="Yaki Udon">
+                    <div class="card-body">
+                        <h5 class="card-title">Yaki Udon</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
